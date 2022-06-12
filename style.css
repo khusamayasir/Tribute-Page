@@ -15,42 +15,101 @@ body {
     background: #eee;
 }
 
-#title {
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
 
+#title {
+    margin-top: 1em;
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-size: 3em;
 }
 
 #img-div { 
-
+    background: white;
+        padding: 10px;
+        margin: 0;
 }
 
-image {
-
-}
-
-#image {
-
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
 }
 
 #img-caption {
-
+    margin: 15px 0 5px 0;
 }
 
 #tribute-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
 
+#tribute-info h3 {
+    margin: 3em;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
 }
 
 ul {
-
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
 }
 
-ul li {
-
+li {
+    margin: 16px 0;
 }
 
 blockquote {
-
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
 }
 
-#tribute-link {
 
+@media (max-width: 460px) {
+    #main {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    #title {
+        font-size: 100%;
+    }
+
+    header p {
+        font-size: 100%;
+    }
+
+    #img-caption {
+        font-size: 80%;
+    }
+
+    #tribute-info h3 {
+        font-size: 100%;
+    }
+
+    ul {
+        font-size: 90%;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
 }
+
